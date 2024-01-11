@@ -20,6 +20,23 @@
 			</button>
 			<a class="navbar-brand" href="main.jsp">JSP 웹 사이트 게시판</a>
 		</div>
+		<div class="collapse navbar-collapse" id="bs-exampl-navbar-cpllapse-1">
+			<ul class="nav navbar-nav">
+				<li><a href="main.jsp">메인</a></li>
+				<li><a href="bbs.jsp">게시</a></li>
+			</ul>
+			<ul class="nav navbar navbar-right">
+				<li>
+					<a href="#" class="dropdown-tpggle"
+						data-toggle="dropdown" role="button" aria-haspopup="true"
+						aria-expanded="false">접속하기<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li class="active"><a href="Login.jsp">로그인</a></li>
+						<li><a href="join.jsp">회원가/a></li>
+					</ul>	
+				</li>
+			</ul>
+		</div>
 	</nav>
 	
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
