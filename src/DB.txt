@@ -1,0 +1,24 @@
+CREATE DATABASE BBS;
+
+USE BBS;
+
+CREATE TABLE USER (
+	userID VARCHAR(20),
+	userPassword VARCHAR(20),
+	userName VARCHAR(20),
+	userGender VARCHAR(20),
+	userEmail VARCHAR(20),
+	PRIMARY KEY (userID)
+);
+
+show tables;
+
+desc user;
+
+INSERT INTO USER VALUES('gildong', '1234', '홍길동', '남자', 'gildong@naver.com');
+
+SELECT * FROM USER;
+
+COMMIT;
+
+DESC USER; 
