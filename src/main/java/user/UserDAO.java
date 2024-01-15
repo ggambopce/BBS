@@ -42,4 +42,21 @@ public class UserDAO {
 		}
 		return -2; // 데이터베이스 오류
 	}
+
+	public int join(User user) {
+		String SQL = "INSERT INTO VALUES (?, ?, ?, ?, ?)";
+		try {
+			pstmt = conn.prepareStatement(SQL);
+			pstmt.setString(1, user.getUserID());
+			pstmt.setString(2, user.getUserPassword());
+			pstmt.setString(1, user.getUserName());
+			pstmt.setString(1, user.getUserGender());
+			pstmt.setString(1, user.getUserEmail());
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+		return -1; // 데이터베이스 오류
+	}
+
+
 }
