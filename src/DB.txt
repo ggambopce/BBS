@@ -22,3 +22,12 @@ SELECT * FROM USER;
 COMMIT;
 
 DESC USER; 
+
+CREATE TABLE BBS (
+	bbsID INT,
+	bbsTitle VARCHAR(20),
+	userID VARCHAR(20),
+	bbsContent VARCHAR(20),
+	bbsAvailable INT,
+	PRIMARY KEY(bbsID)
+);
